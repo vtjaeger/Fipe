@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.CollectionType;
 
-import java.util.Collections;
 import java.util.List;
 
 public class ConverteDados implements IConverteDados{
@@ -18,6 +17,7 @@ public class ConverteDados implements IConverteDados{
         }
     }
 
+    // converte uma string json em uma lista da classe passada. transforma uma json em uma lista de dados (codigo e nome)
     @Override
     public <T> List<T> obterLista(String json, Class<T> classe) {
         CollectionType lista = mapper.getTypeFactory()
