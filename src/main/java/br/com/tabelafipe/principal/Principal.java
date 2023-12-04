@@ -75,7 +75,6 @@ public class Principal {
                 // transforma em uma lista imutavel (nao pode remover em adicionar
                 .collect(Collectors.toList());
 
-
         System.out.println("\nModelos filtrados");
         // imprime a lista acima
         modelosAuto.forEach(System.out::println);
@@ -101,4 +100,5 @@ public class Principal {
         System.out.println("\nTodos os veiculos:");
         veiculos.forEach(System.out::println);
     }
+
 }
